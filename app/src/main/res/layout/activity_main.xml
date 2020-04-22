@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sunny"
+            android:layout_marginLeft="10dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="420dp"
+            android:layout_height="45dp"
+            android:text="Weather Apps"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/OA3"
+            android:textSize="30dp"
+            android:layout_marginLeft="79dp"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:text="Today, April 03"
+            android:textColor="@color/A4"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    <RelativeLayout
+        android:layout_width="420dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/gmb"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/climate"
+            android:layout_marginLeft="170dp"
+
+            />
+
+        <TextView
+            android:id="@+id/satu"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:text="26°"
+            android:textSize="55dp"
+            android:textColor="@color/White"
+            />
+
+        <TextView
+            android:id="@+id/dua"
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:text="20°"
+            android:textSize="44dp"
+            android:textColor="@color/White"
+            android:layout_below="@+id/satu"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="75dp"
+            android:text="Cloudy"
+            android:textSize="33dp"
+            android:textColor="@color/A4"
+            android:layout_toRightOf="@+id/dua"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="70dp"/>
+
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="420dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="15dp">
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/clouds"
+                />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:text="12:00"
+                android:textSize="40dp"
+                android:textColor="@color/White"/>
+
+        </TableRow>
+        <TableRow>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/clouds"
+                />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:text="13:00"
+                android:textSize="40dp"
+                android:textColor="@color/White"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
